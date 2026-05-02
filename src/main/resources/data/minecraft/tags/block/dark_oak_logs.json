@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:dark_oak_log",
+    "minecraft:dark_oak_wood",
+    "minecraft:stripped_dark_oak_log",
+    "minecraft:stripped_dark_oak_wood",
+    "middgard:dark_oak_trunk",
+    "middgard:stripped_dark_oak_trunk",
+    "middgard:dark_oak_branch"
+  ]
+}

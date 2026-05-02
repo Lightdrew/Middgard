@@ -83,21 +83,21 @@
       "minecraft:seagrass_normal"
     ],
     [
-      "midgard:birch_forest/birch_forest_fern",
-      "midgard:birch_forest/birch_forest_leaf_bush",
-      "midgard:birch_forest/birch_forest_universal_dead_bush",
-      "midgard:birch_forest/birch_forest_dense_grass",
-      "midgard:birch_forest/birch_forest_shrub",
-      "midgard:birch_forest/birch_forest_azalea_bush",
+      "middgard:birch_forest/birch_forest_fern",
+      "middgard:birch_forest/birch_forest_leaf_bush",
+      "middgard:birch_forest/birch_forest_universal_dead_bush",
+      "middgard:birch_forest/birch_forest_dense_grass",
+      "middgard:birch_forest/birch_forest_shrub",
+      "middgard:birch_forest/birch_forest_azalea_bush",
 
-      "midgard:birch_forest/birch_forest_small_birch_tree_1",
-      "midgard:birch_forest/birch_forest_small_birch_tree_2",
-      "midgard:birch_forest/birch_forest_small_birch_tree_3",
-      "midgard:birch_forest/birch_forest_small_birch_tree_4",
-      "midgard:birch_forest/birch_forest_small_birch_tree_5",
-      "midgard:birch_forest/birch_forest_small_birch_tree_6",
-      "midgard:birch_forest/birch_forest_tall_birch_tree_4",
-      "midgard:birch_forest/birch_forest_tall_birch_tree_6"
+      "middgard:birch_forest/birch_forest_small_birch_tree_1",
+      "middgard:birch_forest/birch_forest_small_birch_tree_2",
+      "middgard:birch_forest/birch_forest_small_birch_tree_3",
+      "middgard:birch_forest/birch_forest_small_birch_tree_4",
+      "middgard:birch_forest/birch_forest_small_birch_tree_5",
+      "middgard:birch_forest/birch_forest_small_birch_tree_6",
+      "middgard:birch_forest/birch_forest_tall_birch_tree_4",
+      "middgard:birch_forest/birch_forest_tall_birch_tree_6"
     ],
     [
       "minecraft:freeze_top_layer"

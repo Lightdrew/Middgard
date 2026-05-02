@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "middgard:aspen_wood"
+    }
+  ],
+  "result": {
+    "id": "middgard:aspen_planks",
+    "count": 4
+  }
+}

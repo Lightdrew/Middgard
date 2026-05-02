@@ -82,9 +82,9 @@
       "minecraft:seagrass_normal"
     ],
     [
-      "midgard:meadow/meadow_dense_grass",
-      "midgard:meadow/meadow_leaf_bush",
-      "midgard:meadow/meadow_small_rocks"
+      "middgard:meadow/meadow_dense_grass",
+      "middgard:meadow/meadow_leaf_bush",
+      "middgard:meadow/meadow_small_rocks"
     ],
     [
       "minecraft:freeze_top_layer"

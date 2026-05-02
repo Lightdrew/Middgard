@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "middgard:stripped_maple_log"
+    }
+  ],
+  "result": {
+    "id": "middgard:maple_planks",
+    "count": 4
+  }
+}

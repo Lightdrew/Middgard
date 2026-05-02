@@ -1,0 +1,6 @@
+{
+  "parent": "middgard:block/branch_side",
+  "textures": {
+    "texture": "minecraft:block/spruce_log"
+  }
+}

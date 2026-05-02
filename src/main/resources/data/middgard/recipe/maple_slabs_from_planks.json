@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "middgard:maple_planks"
+    }
+  },
+  "result": {
+    "id": "middgard:maple_slab",
+    "count": 6
+  }
+}

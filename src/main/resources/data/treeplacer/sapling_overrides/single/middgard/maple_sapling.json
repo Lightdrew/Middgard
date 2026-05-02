@@ -1,0 +1,95 @@
+{
+   "replace": true,
+   "values": {
+      "treeplacer:all_biomes" : [
+         {
+            "feature" : "middgard:selectors/big_maple_tree_1_selector",
+            "weight" : 1
+         },
+         {
+            "feature" : "middgard:selectors/big_maple_tree_2_selector",
+            "weight" : 1
+         },
+         {
+            "feature" : "middgard:selectors/big_maple_tree_3_selector",
+            "weight" : 1
+         },
+         {
+            "feature" : "middgard:selectors/big_maple_tree_4_selector",
+            "weight" : 1
+         },
+         {
+            "feature" : "middgard:selectors/bushy_maple_tree_1_selector",
+            "weight" : 1
+         },
+         {
+            "feature" : "middgard:selectors/bushy_maple_tree_2_selector",
+            "weight" : 1
+         },
+         {
+            "feature" : "middgard:selectors/bushy_maple_tree_3_selector",
+            "weight" : 1
+         },
+         {
+            "feature" : "middgard:selectors/bushy_maple_tree_4_selector",
+            "weight" : 1
+         },
+         {
+           "feature" : "middgard:selectors/medium_maple_tree_1_selector",
+           "weight" : 1
+         },
+        {
+          "feature" : "middgard:selectors/medium_maple_tree_2_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/medium_maple_tree_3_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/medium_maple_tree_4_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/shrubby_maple_tree_1_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/shrubby_maple_tree_2_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/shrubby_maple_tree_3_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/small_maple_tree_1_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/small_maple_tree_2_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/small_maple_tree_3_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/small_maple_tree_4_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/small_maple_tree_5_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/small_maple_tree_6_selector",
+          "weight" : 1
+        },
+        {
+          "feature" : "middgard:selectors/small_maple_tree_7_selector",
+          "weight" : 1
+        }
+      ]
+   }
+}

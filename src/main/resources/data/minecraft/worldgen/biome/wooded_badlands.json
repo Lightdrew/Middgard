@@ -87,12 +87,12 @@
       "minecraft:patch_cactus_decorated"
     ],
     [
-      "midgard:wooded_badlands/wooded_badlands_pine_tree_1",
-      "midgard:wooded_badlands/wooded_badlands_cone_pine_tree_1",
-      "midgard:wooded_badlands/wooded_badlands_cone_pine_tree_2",
-      "midgard:wooded_badlands/wooded_badlands_cone_pine_tree_3",
-      "midgard:wooded_badlands/wooded_badlands_cone_pine_tree_4",
-      "midgard:wooded_badlands/wooded_badlands_small_rocks"
+      "middgard:wooded_badlands/wooded_badlands_pine_tree_1",
+      "middgard:wooded_badlands/wooded_badlands_cone_pine_tree_1",
+      "middgard:wooded_badlands/wooded_badlands_cone_pine_tree_2",
+      "middgard:wooded_badlands/wooded_badlands_cone_pine_tree_3",
+      "middgard:wooded_badlands/wooded_badlands_cone_pine_tree_4",
+      "middgard:wooded_badlands/wooded_badlands_small_rocks"
     ],
     [
       "minecraft:freeze_top_layer"

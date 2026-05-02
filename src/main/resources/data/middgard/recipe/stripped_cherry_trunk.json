@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stripped_cherry_log"
+    }
+  },
+  "result": {
+    "id": "middgard:stripped_cherry_trunk",
+    "count": 4
+  }
+}

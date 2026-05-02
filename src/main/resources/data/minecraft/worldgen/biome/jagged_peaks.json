@@ -80,9 +80,9 @@
       "minecraft:patch_sugar_cane",
       "minecraft:patch_pumpkin",
       
-      "midgard:jagged_peaks/jagged_peaks_sparse_cone_spruce_tree_5",
-      "midgard:jagged_peaks/jagged_peaks_sparse_small_spike_spruce_tree_2",
-      "midgard:jagged_peaks/jagged_peaks_sparse_small_spike_spruce_tree_4"
+      "middgard:jagged_peaks/jagged_peaks_sparse_cone_spruce_tree_5",
+      "middgard:jagged_peaks/jagged_peaks_sparse_small_spike_spruce_tree_2",
+      "middgard:jagged_peaks/jagged_peaks_sparse_small_spike_spruce_tree_4"
     ],
     [
       "minecraft:freeze_top_layer"

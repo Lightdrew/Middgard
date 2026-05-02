@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "middgard:smooth_white_sandstone"
+  },
+  "result": {
+    "id": "middgard:smooth_white_sandstone_stairs"
+  }
+}

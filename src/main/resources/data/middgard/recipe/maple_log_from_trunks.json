@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "middgard:maple_trunk"
+    }
+  },
+  "result": {
+    "id": "middgard:maple_log"
+  }
+}

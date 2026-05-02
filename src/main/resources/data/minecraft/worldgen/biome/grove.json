@@ -84,22 +84,22 @@
       "minecraft:patch_pumpkin"
     ],
     [
-      "midgard:grove/grove_small_spike_spruce_tree_1",
-      "midgard:grove/grove_small_spike_spruce_tree_2",
-      "midgard:grove/grove_small_spike_spruce_tree_3",
-      "midgard:grove/grove_small_spike_spruce_tree_4",
-      "midgard:grove/grove_spike_spruce_tree_1",
-      "midgard:grove/grove_spike_spruce_tree_2",
-      "midgard:grove/grove_spike_spruce_tree_3",
-      "midgard:grove/grove_spike_spruce_tree_4",
-      "midgard:grove/grove_big_cone_spruce_tree_1",
-      "midgard:grove/grove_big_cone_spruce_tree_2",
-      "midgard:grove/grove_big_cone_spruce_tree_3",
-      "midgard:grove/grove_big_cone_spruce_tree_4",
-      "midgard:grove/grove_cone_spruce_tree_1",
-      "midgard:grove/grove_cone_spruce_tree_2",
-      "midgard:grove/grove_cone_spruce_tree_3",
-      "midgard:grove/grove_cone_spruce_tree_4"
+      "middgard:grove/grove_small_spike_spruce_tree_1",
+      "middgard:grove/grove_small_spike_spruce_tree_2",
+      "middgard:grove/grove_small_spike_spruce_tree_3",
+      "middgard:grove/grove_small_spike_spruce_tree_4",
+      "middgard:grove/grove_spike_spruce_tree_1",
+      "middgard:grove/grove_spike_spruce_tree_2",
+      "middgard:grove/grove_spike_spruce_tree_3",
+      "middgard:grove/grove_spike_spruce_tree_4",
+      "middgard:grove/grove_big_cone_spruce_tree_1",
+      "middgard:grove/grove_big_cone_spruce_tree_2",
+      "middgard:grove/grove_big_cone_spruce_tree_3",
+      "middgard:grove/grove_big_cone_spruce_tree_4",
+      "middgard:grove/grove_cone_spruce_tree_1",
+      "middgard:grove/grove_cone_spruce_tree_2",
+      "middgard:grove/grove_cone_spruce_tree_3",
+      "middgard:grove/grove_cone_spruce_tree_4"
     ],
     [
       "minecraft:freeze_top_layer"

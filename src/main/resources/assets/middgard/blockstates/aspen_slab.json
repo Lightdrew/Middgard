@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "middgard:block/aspen/aspen_slab"
+    },
+    "type=double": {
+      "model": "middgard:block/aspen/aspen_planks"
+    },
+    "type=top": {
+      "model": "middgard:block/aspen/aspen_slab_top"
+    }
+  }
+}

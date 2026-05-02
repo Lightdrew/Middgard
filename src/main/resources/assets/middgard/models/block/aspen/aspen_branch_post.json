@@ -1,0 +1,6 @@
+{
+  "parent": "middgard:block/branch_post",
+  "textures": {
+    "texture": "middgard:block/aspen_log"
+  }
+}

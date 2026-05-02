@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "middgard:pine_planks"
+    }
+  ],
+  "result": {
+    "id": "middgard:pine_button",
+    "count": 1
+  }
+}

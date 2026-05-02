@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "middgard:block/white_sandstone_bottom",
+    "side": "middgard:block/white_sandstone",
+    "top": "middgard:block/white_sandstone_top"
+  }
+}

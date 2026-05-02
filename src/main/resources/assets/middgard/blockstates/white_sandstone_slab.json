@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "middgard:block/white_sandstone_slab"
+    },
+    "type=double": {
+      "model": "middgard:block/white_sandstone"
+    },
+    "type=top": {
+      "model": "middgard:block/white_sandstone_slab_top"
+    }
+  }
+}

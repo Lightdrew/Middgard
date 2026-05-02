@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "middgard:block/palettes/maple_leaves_1"
+  }
+}

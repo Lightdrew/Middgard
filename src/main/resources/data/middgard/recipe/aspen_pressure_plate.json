@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "middgard:aspen_planks"
+    }
+  },
+  "result": {
+    "id": "middgard:aspen_pressure_plate",
+    "count": 1
+  }
+}

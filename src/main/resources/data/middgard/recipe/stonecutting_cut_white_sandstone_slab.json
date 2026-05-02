@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "middgard:white_sandstone"
+  },
+  "result": {
+    "id": "middgard:cut_white_sandstone_slab",
+    "count": 2
+  }
+}

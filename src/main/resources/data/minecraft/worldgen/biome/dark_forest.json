@@ -84,22 +84,22 @@
       "minecraft:patch_pumpkin",
       "minecraft:seagrass_normal",
       
-      "midgard:dark_forest/dark_forest_fallen_oak_leaves",
-      "midgard:dark_forest/dark_forest_universal_dead_bush",
-      "midgard:dark_forest/dark_forest_birch_leaf_bush",
-      "midgard:dark_forest/dark_forest_dense_grass",
+      "middgard:dark_forest/dark_forest_fallen_oak_leaves",
+      "middgard:dark_forest/dark_forest_universal_dead_bush",
+      "middgard:dark_forest/dark_forest_birch_leaf_bush",
+      "middgard:dark_forest/dark_forest_dense_grass",
 
-      "midgard:dark_forest/dark_forest_huge_brown_mushroom",
-      "midgard:dark_forest/dark_forest_huge_red_mushroom",
-      "midgard:dark_forest/dark_forest_birch_tree_1",
-      "midgard:dark_forest/dark_forest_birch_tree_2",
-      "midgard:dark_forest/dark_forest_oak_tree_1",
-      "midgard:dark_forest/dark_forest_oak_tree_2",
-      "midgard:dark_forest/dark_forest_huge_dark_oak_tree_1",
-      "midgard:dark_forest/dark_forest_dark_oak_tree_1",
-      "midgard:dark_forest/dark_forest_dark_oak_tree_2",
-      "midgard:dark_forest/dark_forest_dark_oak_tree_3",
-      "midgard:dark_forest/dark_forest_dark_oak_tree_4"
+      "middgard:dark_forest/dark_forest_huge_brown_mushroom",
+      "middgard:dark_forest/dark_forest_huge_red_mushroom",
+      "middgard:dark_forest/dark_forest_birch_tree_1",
+      "middgard:dark_forest/dark_forest_birch_tree_2",
+      "middgard:dark_forest/dark_forest_oak_tree_1",
+      "middgard:dark_forest/dark_forest_oak_tree_2",
+      "middgard:dark_forest/dark_forest_huge_dark_oak_tree_1",
+      "middgard:dark_forest/dark_forest_dark_oak_tree_1",
+      "middgard:dark_forest/dark_forest_dark_oak_tree_2",
+      "middgard:dark_forest/dark_forest_dark_oak_tree_3",
+      "middgard:dark_forest/dark_forest_dark_oak_tree_4"
     ],
     [
       "minecraft:freeze_top_layer"

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "middgard:stripped_pine_wood"
+    }
+  ],
+  "result": {
+    "id": "middgard:pine_planks",
+    "count": 4
+  }
+}

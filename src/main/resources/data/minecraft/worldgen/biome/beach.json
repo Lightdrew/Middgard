@@ -77,8 +77,8 @@
       "minecraft:patch_pumpkin"
     ],
     [
-      "midgard:beach/beach_beach_grass",
-      "midgard:beach/beach_dense_grass"
+      "middgard:beach/beach_beach_grass",
+      "middgard:beach/beach_dense_grass"
     ],
     [
       "minecraft:freeze_top_layer"

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#&#",
+    "#&#"
+  ],
+  "key": {
+    "#": {
+      "item": "middgard:aspen_planks"
+    },
+    "&": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "middgard:aspen_fence",
+    "count": 3
+  }
+}

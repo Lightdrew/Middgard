@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "middgard:white_sandstone_slab"
+    }
+  },
+  "result": {
+    "id": "middgard:chiseled_white_sandstone",
+    "count": 1
+  }
+}

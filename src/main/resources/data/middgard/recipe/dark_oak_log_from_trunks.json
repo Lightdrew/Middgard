@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "middgard:dark_oak_trunk"
+    }
+  },
+  "result": {
+    "id": "minecraft:dark_oak_log"
+  }
+}

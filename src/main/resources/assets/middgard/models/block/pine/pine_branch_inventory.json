@@ -1,0 +1,6 @@
+{
+  "parent": "middgard:block/branch_inventory",
+  "textures": {
+    "texture": "middgard:block/pine_log"
+  }
+}

@@ -1,77 +1,77 @@
 {
-   "replace": false,
+   "replace": true,
    "values": {
       "treeplacer:all_biomes" : [
          {
-            "feature" : "midgard:oak/bushy_oak_tree_1",
+            "feature" : "middgard:selectors/bushy_oak_tree_1_selector",
             "weight" : 1
          },
          {
-            "feature" : "midgard:oak/bushy_oak_tree_2",
+            "feature" : "middgard:selectors/bushy_oak_tree_2_selector",
             "weight" : 1
          },
          {
-            "feature" : "midgard:oak/bushy_oak_tree_3",
+            "feature" : "middgard:selectors/bushy_oak_tree_3_selector",
             "weight" : 1
          },
          {
-            "feature" : "midgard:oak/shrubby_oak_tree_1",
+            "feature" : "middgard:selectors/shrubby_oak_tree_1_selector",
             "weight" : 1
          },
          {
-            "feature" : "midgard:oak/shrubby_oak_tree_2",
+            "feature" : "middgard:selectors/shrubby_oak_tree_2_selector",
             "weight" : 1
          },
          {
-            "feature" : "midgard:oak/shrubby_oak_tree_3",
+            "feature" : "middgard:selectors/shrubby_oak_tree_3_selector",
             "weight" : 1
          },
          {
-            "feature" : "midgard:oak/small_oak_tree_1",
+            "feature" : "middgard:selectors/small_oak_tree_1_selector",
             "weight" : 1
          },
          {
-            "feature" : "midgard:oak/small_oak_tree_2",
+            "feature" : "middgard:selectors/small_oak_tree_2_selector",
             "weight" : 1
          },
         {
-          "feature" : "midgard:oak/small_oak_tree_3",
+          "feature" : "middgard:selectors/small_oak_tree_3_selector",
           "weight" : 1
         },
         {
-          "feature" : "midgard:oak/small_oak_tree_4",
+          "feature" : "middgard:selectors/small_oak_tree_4_selector",
           "weight" : 1
         },
         {
-          "feature" : "midgard:oak/small_oak_tree_5",
+          "feature" : "middgard:selectors/small_oak_tree_5_selector",
           "weight" : 1
         },
         {
-          "feature" : "midgard:oak/small_oak_tree_6",
+          "feature" : "middgard:selectors/small_oak_tree_6_selector",
           "weight" : 1
         },
         {
-          "feature" : "midgard:oak/small_oak_tree_7",
+          "feature" : "middgard:selectors/small_oak_tree_7_selector",
           "weight" : 1
         },
         {
-          "feature" : "midgard:oak/tall_oak_tree_1",
+          "feature" : "middgard:selectors/tall_oak_tree_1_selector",
           "weight" : 1
         },
         {
-          "feature" : "midgard:oak/tall_oak_tree_2",
+          "feature" : "middgard:selectors/tall_oak_tree_2_selector",
           "weight" : 1
         },
         {
-          "feature" : "midgard:oak/tall_oak_tree_3",
+          "feature" : "middgard:selectors/tall_oak_tree_3_selector",
           "weight" : 1
         },
         {
-          "feature" : "midgard:oak/tall_oak_tree_4",
+          "feature" : "middgard:selectors/tall_oak_tree_4_selector",
           "weight" : 1
         },
         {
-          "feature" : "midgard:oak/tall_oak_tree_5",
+          "feature" : "middgard:selectors/tall_oak_tree_5_selector",
           "weight" : 1
         }
       ]

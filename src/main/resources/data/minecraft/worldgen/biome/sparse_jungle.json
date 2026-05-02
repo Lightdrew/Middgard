@@ -89,11 +89,11 @@
       "minecraft:seagrass_normal"
     ],
     [
-      "midgard:sparse_jungle/sparse_jungle_small_rocks",
-      "midgard:sparse_jungle/sparse_jungle_pine_tree_1",
-      "midgard:sparse_jungle/sparse_jungle_pine_tree_2",
-      "midgard:sparse_jungle/sparse_jungle_pine_tree_3",
-      "midgard:sparse_jungle/sparse_jungle_pine_tree_4"
+      "middgard:sparse_jungle/sparse_jungle_small_rocks",
+      "middgard:sparse_jungle/sparse_jungle_pine_tree_1",
+      "middgard:sparse_jungle/sparse_jungle_pine_tree_2",
+      "middgard:sparse_jungle/sparse_jungle_pine_tree_3",
+      "middgard:sparse_jungle/sparse_jungle_pine_tree_4"
     ],
     [
       "minecraft:freeze_top_layer"

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "middgard:aspen_trunk"
+    }
+  },
+  "result": {
+    "id": "middgard:aspen_log"
+  }
+}

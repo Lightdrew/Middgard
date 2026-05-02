@@ -91,24 +91,24 @@
       "minecraft:seagrass_normal"
     ],
     [
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_birch_leaf_bush",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_azalea_bush",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_beach_grass",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_birch_leaf_bush",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_azalea_bush",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_beach_grass",
       
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_white_pine_tree_1",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_white_pine_tree_2",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_white_pine_tree_3",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_white_pine_tree_4",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_small_white_pine_tree_1",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_small_white_pine_tree_2",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_sparse_pine_tree_1",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_sparse_pine_tree_2",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_sparse_pine_tree_4",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_spike_pine_tree_1",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_spike_pine_tree_2",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_white_pine_tree_1",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_white_pine_tree_2",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_white_pine_tree_3",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_white_pine_tree_4",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_small_white_pine_tree_1",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_small_white_pine_tree_2",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_sparse_pine_tree_1",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_sparse_pine_tree_2",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_sparse_pine_tree_4",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_spike_pine_tree_1",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_spike_pine_tree_2",
       
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_bushy_oak_tree_1",
-      "midgard:old_growth_pine_taiga/old_growth_pine_taiga_bushy_oak_tree_2"
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_bushy_oak_tree_1",
+      "middgard:old_growth_pine_taiga/old_growth_pine_taiga_bushy_oak_tree_2"
     ],
     [
       "minecraft:freeze_top_layer"

@@ -82,27 +82,27 @@
       "minecraft:seagrass_normal"
     ],
     [
-      "midgard:windswept_hills/windswept_hills_dense_grass",
-      "midgard:windswept_hills/windswept_hills_leaf_bush",
-      "midgard:windswept_hills/windswept_hills_small_rocks",
-      "midgard:windswept_hills/windswept_hills_dirt_vegetation",
+      "middgard:windswept_hills/windswept_hills_dense_grass",
+      "middgard:windswept_hills/windswept_hills_leaf_bush",
+      "middgard:windswept_hills/windswept_hills_small_rocks",
+      "middgard:windswept_hills/windswept_hills_dirt_vegetation",
 
-      "midgard:windswept_hills/windswept_hills_cone_pine_tree_1",
-      "midgard:windswept_hills/windswept_hills_pine_tree_1",
-      "midgard:windswept_hills/windswept_hills_spike_pine_tree_3",
+      "middgard:windswept_hills/windswept_hills_cone_pine_tree_1",
+      "middgard:windswept_hills/windswept_hills_pine_tree_1",
+      "middgard:windswept_hills/windswept_hills_spike_pine_tree_3",
 
-      "midgard:windswept_hills/windswept_hills_cone_spruce_tree_1",
-      "midgard:windswept_hills/windswept_hills_cone_spruce_tree_6",
-      "midgard:windswept_hills/windswept_hills_spike_spruce_tree_1",
-      "midgard:windswept_hills/windswept_hills_small_spike_spruce_tree_2",
-      "midgard:windswept_hills/windswept_hills_small_spike_spruce_tree_3",
+      "middgard:windswept_hills/windswept_hills_cone_spruce_tree_1",
+      "middgard:windswept_hills/windswept_hills_cone_spruce_tree_6",
+      "middgard:windswept_hills/windswept_hills_spike_spruce_tree_1",
+      "middgard:windswept_hills/windswept_hills_small_spike_spruce_tree_2",
+      "middgard:windswept_hills/windswept_hills_small_spike_spruce_tree_3",
 
-      "midgard:windswept_hills/windswept_hills_small_aspen_tree_1",
-      "midgard:windswept_hills/windswept_hills_small_aspen_tree_2",
-      "midgard:windswept_hills/windswept_hills_small_aspen_tree_3",
-      "midgard:windswept_hills/windswept_hills_small_aspen_tree_4",
-      "midgard:windswept_hills/windswept_hills_small_aspen_tree_5",
-      "midgard:windswept_hills/windswept_hills_small_aspen_tree_6"
+      "middgard:windswept_hills/windswept_hills_small_aspen_tree_1",
+      "middgard:windswept_hills/windswept_hills_small_aspen_tree_2",
+      "middgard:windswept_hills/windswept_hills_small_aspen_tree_3",
+      "middgard:windswept_hills/windswept_hills_small_aspen_tree_4",
+      "middgard:windswept_hills/windswept_hills_small_aspen_tree_5",
+      "middgard:windswept_hills/windswept_hills_small_aspen_tree_6"
     ],
     [
       "minecraft:freeze_top_layer"
