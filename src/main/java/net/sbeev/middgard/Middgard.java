@@ -22,8 +22,10 @@ public class Middgard {
     public static final Logger LOGGER = LogUtils.getLogger();
 
 //FMLJavaModLoadingContext
-    public Middgard(IEventBus modEventBus) {
+    public Middgard(IEventBus modEventBus)
+    {
         ModBlocks.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         ModCreativeModTabs.register(modEventBus);

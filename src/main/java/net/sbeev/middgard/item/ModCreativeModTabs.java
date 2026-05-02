@@ -18,16 +18,17 @@ public class ModCreativeModTabs {
 
     public static final ArrayList<DeferredHolder<Item, Item>> entries = new ArrayList<>();
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> middgard_TAB = CREATIVE_MODE_TABS.register("middgard_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(entries.getFirst().get()))
+    public static DeferredHolder<CreativeModeTab, CreativeModeTab> MIDDGARD_TAB;
 
-                    .title(Component.translatable("creativetab.middgard_tab"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        entries.forEach((entry) -> output.accept(entry.get()));
-                    })
-                    .build());
+    public static void register(IEventBus eventBus)
+    {
+        MIDDGARD_TAB = CREATIVE_MODE_TABS.register("middgard_tab",
+                () -> CreativeModeTab.builder().icon(() -> new ItemStack(entries.getFirst().get())
+        ).title(Component.translatable("creativetab.middgard_tab"))
+        .displayItems((itemDisplayParameters, output) ->
+                entries.forEach((entry) -> output.accept(entry.get()))
+        ).build());
 
-    public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
         Middgard.LOGGER.info("Loaded Middgard Creative Tab.");
     }
