@@ -1,9 +1,9 @@
 {
   "values": [
-    "midgard:white_sandstone_stairs",
-    "midgard:smooth_white_sandstone_stairs",
+    "middgard:white_sandstone_stairs",
+    "middgard:smooth_white_sandstone_stairs",
 
-    "midgard:pine_stairs",
-    "midgard:aspen_stairs"
+    "middgard:pine_stairs",
+    "middgard:aspen_stairs"
   ]
 }

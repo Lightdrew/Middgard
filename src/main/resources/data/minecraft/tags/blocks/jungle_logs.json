@@ -4,8 +4,8 @@
     "minecraft:jungle_wood",
     "minecraft:stripped_jungle_log",
     "minecraft:stripped_jungle_wood",
-    "midgard:jungle_trunk",
-    "midgard:stripped_jungle_trunk",
-    "midgard:jungle_branch"
+    "middgard:jungle_trunk",
+    "middgard:stripped_jungle_trunk",
+    "middgard:jungle_branch"
   ]
 }

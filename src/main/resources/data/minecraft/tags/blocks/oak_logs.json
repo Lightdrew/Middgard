@@ -4,8 +4,8 @@
     "minecraft:oak_wood",
     "minecraft:stripped_oak_log",
     "minecraft:stripped_oak_wood",
-    "midgard:oak_trunk",
-    "midgard:stripped_oak_trunk",
-    "midgard:oak_branch"
+    "middgard:oak_trunk",
+    "middgard:stripped_oak_trunk",
+    "middgard:oak_branch"
   ]
 }

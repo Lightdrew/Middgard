@@ -1,12 +1,12 @@
 {
   "values": [
-    "midgard:pine_sapling",
-    "midgard:white_pine_sapling",
-    "midgard:aspen_sapling",
-    "midgard:yellow_aspen_sapling",
-    "midgard:maple_sapling",
-    "midgard:yellow_maple_sapling",
-    "midgard:orange_maple_sapling",
-    "midgard:red_maple_sapling"
+    "middgard:pine_sapling",
+    "middgard:white_pine_sapling",
+    "middgard:aspen_sapling",
+    "middgard:yellow_aspen_sapling",
+    "middgard:maple_sapling",
+    "middgard:yellow_maple_sapling",
+    "middgard:orange_maple_sapling",
+    "middgard:red_maple_sapling"
   ]
 }

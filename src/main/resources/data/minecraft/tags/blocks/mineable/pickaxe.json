@@ -1,14 +1,14 @@
 {
   "values": [
-    "midgard:white_sandstone",
-    "midgard:white_sandstone_slab",
-    "midgard:white_sandstone_stairs",
-    "midgard:white_sandstone_wall",
-    "midgard:cut_white_sandstone",
-    "midgard:cut_white_sandstone_slab",
-    "midgard:smooth_white_sandstone",
-    "midgard:smooth_white_sandstone_slab",
-    "midgard:smooth_white_sandstone_stairs",
-    "midgard:chiseled_white_sandstone"
+    "middgard:white_sandstone",
+    "middgard:white_sandstone_slab",
+    "middgard:white_sandstone_stairs",
+    "middgard:white_sandstone_wall",
+    "middgard:cut_white_sandstone",
+    "middgard:cut_white_sandstone_slab",
+    "middgard:smooth_white_sandstone",
+    "middgard:smooth_white_sandstone_slab",
+    "middgard:smooth_white_sandstone_stairs",
+    "middgard:chiseled_white_sandstone"
   ]
 }

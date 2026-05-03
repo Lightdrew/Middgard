@@ -4,8 +4,8 @@
     "minecraft:spruce_wood",
     "minecraft:stripped_spruce_log",
     "minecraft:stripped_spruce_wood",
-    "midgard:spruce_trunk",
-    "midgard:stripped_spruce_trunk",
-    "midgard:spruce_branch"
+    "middgard:spruce_trunk",
+    "middgard:stripped_spruce_trunk",
+    "middgard:spruce_branch"
   ]
 }
