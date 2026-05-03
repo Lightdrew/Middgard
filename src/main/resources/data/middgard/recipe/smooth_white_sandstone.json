@@ -4,7 +4,9 @@
   "cookingtime": 200,
   "experience": 0.35,
   "ingredient": {
-    "id": "middgard:white_sandstone"
+    "item": "middgard:white_sandstone"
   },
-  "result": "middgard:smooth_white_sandstone"
+  "result": {
+    "id" : "middgard:smooth_white_sandstone"
+  }
 }
