@@ -1,0 +1,10 @@
+{
+    "feature": "middgard:tall_fern",
+    "placement": [
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+        }
+    ]
+
+}

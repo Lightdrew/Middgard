@@ -1,0 +1,15 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "net.sbeev.middgard.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "refmap": "middgard.refmap.json",
+    "mixins": [
+        "OTTYGTreeFeatureMixin",
+        "SaplingBlockMixin",
+        "StructureTemplateMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
