@@ -1,10 +1,8 @@
-
-
-
-#Terrible python code (I don't use python) that refactors patterns in the tree palette names. Fixes the namespacing change from midgard to middgard -Lightdrew
+#Terrible python code (I don't use python) that refactors patterns in the tree palette names.
+# Used to fix the namespacing change from midgard to middgard -Lightdrew
 TARGET_EXTENSIONS = {".nbt", ".dat", ".snbt"}
 
-def refactor_pattern(path, old_pattern, new_pattern):
+def refactor_name_pattern(path, old_pattern, new_pattern):
     import nbtlib
     from nbtlib import File
     from nbtlib.tag import String
@@ -17,12 +15,12 @@ def refactor_pattern(path, old_pattern, new_pattern):
         return
 
     for block in palette:
-        if not isinstance(block, (nbtlib.Compound, dict)):
+        if type(block) is not nbtlib.Compound:
             continue
 
         name = block.get("Name")
 
-        if isinstance(name, (nbtlib.tag.String, str)):
+        if type(name) is nbtlib.tag.String:
             block["Name"] = String(name.replace(old_pattern, new_pattern))
 
     file.save()
@@ -31,7 +29,7 @@ def refactor_pattern(path, old_pattern, new_pattern):
 
 
 def process_file(path, old_pattern, new_pattern):
-    refactor_pattern(path, old_pattern, new_pattern)
+    refactor_name_pattern(path, old_pattern, new_pattern)
     print(f"{path}:\n\tRefactored '{old_pattern}' to '{new_pattern}'.")
 
     pass
