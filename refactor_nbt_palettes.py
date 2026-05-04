@@ -1,5 +1,5 @@
-#Terrible python code (I don't use python) that refactors patterns in the tree palette names.
-# Used to fix the namespacing change from midgard to middgard -Lightdrew
+#Terrible Python code (I don't use Python) that refactors patterns in the tree palette names.
+# Used to fix the namespacing change from 'midgard' to 'middgard' -Lightdrew
 TARGET_EXTENSIONS = {".nbt", ".dat", ".snbt"}
 
 def refactor_name_pattern(path, old_pattern, new_pattern):
@@ -55,8 +55,8 @@ if __name__ == "__main__":
     try:
         parser = argparse.ArgumentParser(description="NBT palette names refactoring utility")
         parser.add_argument("directory", help="Root folder to scan")
-        parser.add_argument("old_pattern", help="Pattern to replace (e.g. 'oldmod:' to target oldmod namespace)")
-        parser.add_argument("new_pattern", help="Replacement pattern (e.g. 'newmod:' to replace oldmod namespace with newmod namespace)")
+        parser.add_argument("old_pattern", help="Pattern to replace (e.g. 'old_mod:' to target old_mod namespace)")
+        parser.add_argument("new_pattern", help="Replacement pattern (e.g. 'new_mod:' to replace old_mod namespace with new_mod namespace)")
 
         args = parser.parse_args()
 
