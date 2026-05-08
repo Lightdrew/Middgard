@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "midgard:block/aspen_planks",
-    "side": "midgard:block/aspen_planks",
-    "top": "midgard:block/aspen_planks"
-  }
-}
