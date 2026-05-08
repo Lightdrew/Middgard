@@ -117,5 +117,19 @@
   "block.middgard.stripped_cherry_trunk": "Stripped Cherry Trunk",
   "block.middgard.cherry_branch": "Cherry Branch",
 
+  "biome.middgard.aspen_forest": "Aspen Forest",
+  "biome.middgard.autumnal_aspen_forest": "Autumnal Aspen Forest",
+  "biome.middgard.maple_forest": "Maple Forest",
+  "biome.middgard.autumnal_maple_forest": "Autumnal Maple Forest",
+  "biome.middgard.boreal_forest": "Boreal Forest",
+  "biome.middgard.clearing": "Clearing",
+  "biome.middgard.desert_shrubland": "Desert Shrubland",
+  "biome.middgard.pine_forest": "Pine Forest",
+  "biome.middgard.riverbank": "Riverbank",
+  "biome.middgard.snowy_windswept_hills": "Snowy Windswept Hill",
+  "biome.middgard.steppe": "Steppe",
+  "biome.middgard.westlands": "Westlands",
+  "biome.middgard.white_shore": "White Shore",
+
   "creativetab.middgard_tab": "Middgard"
 }
