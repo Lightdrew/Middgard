@@ -55,19 +55,17 @@ versionRange = "${neo_version_range}" #mandatory
 ordering = "NONE"
 # Side this dependency is applied on - BOTH, CLIENT, or SERVER
 side = "BOTH"
-# Here's another dependency
+
 [[dependencies."${mod_id}"]]
 modId = "minecraft"
 type = "required"
-# This version range declares a minimum of the current minecraft version up to but not including the next major version
 versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies."${mod_id}"]] #optional
-# the modid of the dependency
-modId = "tectonic" #mandatory
-type = "required" #mandatory
+[[dependencies."${mod_id}"]]
+modId = "tectonic"
+type = "required"
 versionRange = "${tectonic_version_range}"
 ordering = "AFTER"
 side = "BOTH"
@@ -79,9 +77,9 @@ versionRange = "${ottyg_version_range}"
 ordering = "AFTER"
 side = "BOTH"
 
-#[[dependencies."${mod_id}"]]
-#modId = "treeplacer"
-#type = "required"
-#versionRange = "${treeplacer_version_range}"
-#ordering = "AFTER"
-#side = "BOTH"
+[[dependencies."${mod_id}"]]
+modId = "lithostitched"
+type = "required"
+versionRange = "${lithostitched_version_range}"
+ordering = "AFTER"
+side = "BOTH"

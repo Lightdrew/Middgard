@@ -9,3 +9,9 @@ Quick and dirty port of Midgard/Middgard from 1.20.1 Forge to 1.21.1 Neoforge I 
 
 All I did was port the code of the original mod to 1.21.1 Neoforge (then promptly finding someone else did that after I went through the whole process), adjust other people's code for my own codebase and change the mod id to avoid collisions.\
 Let me know if there are any issues and I'll see if i can solve them (I still have very little experience modding but I'll try my best)
+
+## Dependancies
+While the mod automatically checks for dependancies, here's a list of them with links to the respective pages:
+- [Lithostitched 1.7.3](https://modrinth.com/mod/lithostitched): Technically Tectonic's dependancy but 1.7.3 is required since it fixes [this crash](https://github.com/Apollounknowndev/lithostitched/issues/90)
+- [Tectonic 3.0.17+](https://modrinth.com/mod/tectonic)
+- [Oh The Trees You'll Grow 5.3.0+](https://modrinth.com/mod/oh-the-trees-youll-grow)
