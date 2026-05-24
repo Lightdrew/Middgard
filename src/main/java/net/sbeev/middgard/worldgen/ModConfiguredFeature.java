@@ -7,8 +7,10 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
+/**
+ * @author <a href="https://github.com/HarlockDevv">HarlockDevv</a>
+ */
 public final class ModConfiguredFeature {
 
     private ModConfiguredFeature() {}
@@ -83,7 +85,7 @@ public final class ModConfiguredFeature {
             "orange_maple/small_orange_maple_tree_7");
 
     // Vanilla sapling overrides — replicate the 1.20 Forge TreePlacer `sapling_overrides/single/minecraft/*.json`
-    // entries so vanilla oak/birch/spruce saplings grow Midgard trees.
+    // entries so vanilla oak/birch/spruce saplings grow Middgard trees.
 
     public static final List<ResourceKey<ConfiguredFeature<?, ?>>> VANILLA_OAK = listOf(
             "oak/bushy_oak_tree_1", "oak/bushy_oak_tree_2", "oak/bushy_oak_tree_3",

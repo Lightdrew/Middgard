@@ -20,10 +20,12 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sbeev.middgard.Middgard;
 import net.sbeev.middgard.block.custom.*;
+import net.sbeev.middgard.item.ModItems;
 import net.sbeev.middgard.worldgen.ModConfiguredFeature;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.function.Supplier;
 
 public class ModBlocks
@@ -35,13 +37,13 @@ public class ModBlocks
 
     public static final DeferredBlock<RootedDirtBlock> CONIFER_TOPSOIL = registerBlock("conifer_topsoil",
             () -> new RootedDirtBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.ROOTED_DIRT)) {
-                @Override
+                @Override @ParametersAreNonnullByDefault
                 public @NotNull TriState canSustainPlant(BlockState s, BlockGetter l, BlockPos sP, Direction f, BlockState p)
                 {
                     return TriState.TRUE;
                 }
 
-                @Override
+                @Override @ParametersAreNonnullByDefault
                 public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ItemAbility itemAbility, boolean simulate)
                 {
                     ItemStack itemStack = context.getItemInHand();
@@ -51,7 +53,6 @@ public class ModBlocks
                     }
 
                     if (ItemAbilities.HOE_TILL == itemAbility) {
-                        Block block = state.getBlock();
                         return Blocks.DIRT.defaultBlockState();
                     }
 
@@ -299,16 +300,34 @@ public class ModBlocks
     public static final DeferredBlock<ModSaplingBlock> RED_MAPLE_SAPLING = registerBlock("red_maple_sapling",
             () -> new ModSaplingBlock(ModConfiguredFeature.RED_MAPLE,TreeGrower.OAK,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
+    public static final ModSignBlocks.SignBlock PINE_SIGN = ModSignBlocks.registerSignBlock("pine", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN), ModWoodTypes.PINE);
+    public static final ModSignBlocks.HangingSignBlock PINE_HANGING_SIGN = ModSignBlocks.registerHangingSignBlock("pine", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN), ModWoodTypes.PINE);
+
+    public static final ModSignBlocks.SignBlock ASPEN_SIGN = ModSignBlocks.registerSignBlock("aspen", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN), ModWoodTypes.ASPEN);
+    public static final ModSignBlocks.HangingSignBlock ASPEN_HANGING_SIGN = ModSignBlocks.registerHangingSignBlock("aspen", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN), ModWoodTypes.ASPEN);
+
+    public static final ModSignBlocks.SignBlock MAPLE_SIGN = ModSignBlocks.registerSignBlock("maple", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN), ModWoodTypes.MAPLE);
+    public static final ModSignBlocks.HangingSignBlock MAPLE_HANGING_SIGN = ModSignBlocks.registerHangingSignBlock("maple", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SIGN), ModWoodTypes.MAPLE);
+
+
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {
         if (DEBUG) {
             Middgard.LOGGER.info("Registering Middgard block " + Middgard.MOD_ID + ":{}", name);
         }
-        return BLOCKS.register(name, block);
+        var block_entry = BLOCKS.register(name, block);
+
+        registerBlockItem(name, block_entry);
+
+        return block_entry;
     }
 
-    public static void register(IEventBus eventBus)
-    {
+    private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block_entry) {
+        ModItems.ITEMS.registerItem(name, properties -> new BlockItem(block_entry.get(), properties));
+    }
+
+    public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
         Middgard.LOGGER.info("Loaded Middgard Blocks.");
     }

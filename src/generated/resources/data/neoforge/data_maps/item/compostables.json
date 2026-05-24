@@ -1,0 +1,28 @@
+{
+  "values": {
+    "middgard:aspen_sapling": {
+      "chance": 0.3
+    },
+    "middgard:maple_sapling": {
+      "chance": 0.3
+    },
+    "middgard:orange_maple_sapling": {
+      "chance": 0.3
+    },
+    "middgard:pine_sapling": {
+      "chance": 0.3
+    },
+    "middgard:red_maple_sapling": {
+      "chance": 0.3
+    },
+    "middgard:white_pine_sapling": {
+      "chance": 0.3
+    },
+    "middgard:yellow_aspen_sapling": {
+      "chance": 0.3
+    },
+    "middgard:yellow_maple_sapling": {
+      "chance": 0.3
+    }
+  }
+}

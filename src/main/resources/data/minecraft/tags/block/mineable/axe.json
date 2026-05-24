@@ -75,6 +75,13 @@
     "middgard:stripped_acacia_trunk",
     "middgard:stripped_dark_oak_trunk",
     "middgard:stripped_mangrove_trunk",
-    "middgard:stripped_cherry_trunk"
+    "middgard:stripped_cherry_trunk",
+
+    "middgard:aspen_sign",
+    "middgard:aspen_hanging_sign",
+    "middgard:pine_sign",
+    "middgard:pine_hanging_sign",
+    "middgard:maple_sign",
+    "middgard:maple_hanging_sign"
   ]
 }

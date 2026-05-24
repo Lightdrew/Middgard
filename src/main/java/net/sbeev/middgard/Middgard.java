@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.sbeev.middgard.block.ModBlocks;
+import net.sbeev.middgard.block.entity.ModBlockEntities;
 import net.sbeev.middgard.item.ModCreativeTab;
 import net.sbeev.middgard.item.ModItems;
 import org.slf4j.Logger;
@@ -18,6 +19,8 @@ public class Middgard {
     public Middgard(IEventBus modEventBus)
     {
         ModBlocks.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
 
         ModItems.register(modEventBus);
 

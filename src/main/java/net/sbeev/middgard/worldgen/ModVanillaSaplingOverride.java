@@ -1,6 +1,5 @@
 package net.sbeev.middgard.worldgen;
 
-import com.mojang.logging.LogUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -14,6 +13,9 @@ import net.sbeev.middgard.Middgard;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author <a href="https://github.com/HarlockDevv">HarlockDevv</a>
+ */
 public final class ModVanillaSaplingOverride
 {
     private static final Map<net.minecraft.world.level.block.Block, List<ResourceKey<ConfiguredFeature<?, ?>>>> POOLS =
@@ -22,8 +24,6 @@ public final class ModVanillaSaplingOverride
                     Blocks.BIRCH_SAPLING, ModConfiguredFeature.VANILLA_BIRCH,
                     Blocks.SPRUCE_SAPLING, ModConfiguredFeature.VANILLA_SPRUCE
             );
-
-    private ModVanillaSaplingOverride() {}
 
     public static boolean isOverridden(BlockState state) {
         return POOLS.containsKey(state.getBlock());
@@ -61,8 +61,8 @@ public final class ModVanillaSaplingOverride
             level.setBlock(pos, state, 4);
         }
 
-        // All Midgard features failed. Return true anyway so the vanilla TreeGrower does NOT
-        // grow a vanilla tree on top — the user wants Midgard trees or nothing on these saplings.
+        // All Middgard features failed. Return true anyway so the vanilla TreeGrower does NOT
+        // grow a vanilla tree on top — the user wants Middgard trees or nothing on these saplings.
         Middgard.LOGGER.debug("VanillaSaplingOverride at {}: all {} features failed for {}", pos, size, state.getBlock());
         return true;
     }

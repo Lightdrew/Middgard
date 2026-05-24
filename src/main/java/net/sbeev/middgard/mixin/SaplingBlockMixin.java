@@ -14,9 +14,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 /**
  * @author <a href="https://github.com/HarlockDevv">HarlockDevv</a>
- * Intercepts vanilla oak/birch/spruce saplings' {@code advanceTree} call and redirects
- * it to the Midgard feature pool (replicating the 1.20 TreePlacer sapling_overrides).
- * Midgard's own {@link net.sbeev.middgard.block.custom.ModSaplingBlock} overrides
+ * Injects vanilla oak/birch/spruce saplings' {@code advanceTree} call so vanilla saplings
+ * instead reference the Middgard feature pool, dropping
+ * Middgard's own {@link net.sbeev.middgard.block.custom.ModSaplingBlock} overrides
  * {@code advanceTree} directly, so this mixin only fires for vanilla subclasses.
  */
 @Mixin(SaplingBlock.class)

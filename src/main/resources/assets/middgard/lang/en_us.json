@@ -131,5 +131,12 @@
   "biome.middgard.westlands": "Westlands",
   "biome.middgard.white_shore": "White Shore",
 
+  "block.middgard.aspen_sign": "Aspen Sign",
+  "block.middgard.aspen_hanging_sign": "Hanging Aspen Sign",
+  "block.middgard.maple_sign": "Maple Sign",
+  "block.middgard.maple_hanging_sign": "Hanging Maple Sign",
+  "block.middgard.pine_sign": "Pine Sign",
+  "block.middgard.pine_hanging_sign": "Hanging Pine Sign",
+
   "creativetab.middgard_tab": "Middgard"
 }

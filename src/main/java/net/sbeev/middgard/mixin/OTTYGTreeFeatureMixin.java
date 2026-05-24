@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -30,7 +31,8 @@ import java.util.Set;
 }, remap = false)
 public class OTTYGTreeFeatureMixin {
 
-    private static final ThreadLocal<Deque<Set<BlockPos>>> MIDGARD$COLLECTOR =
+    @Unique
+    private static final ThreadLocal<Deque<Set<BlockPos>>> MIDDGARD$COLLECTOR =
             ThreadLocal.withInitial(ArrayDeque::new);
 
     @Inject(
@@ -42,7 +44,7 @@ public class OTTYGTreeFeatureMixin {
             require = 0
     )
     private void midgard$pushCollector(FeaturePlaceContext<?> ctx, CallbackInfoReturnable<Boolean> cir) {
-        MIDGARD$COLLECTOR.get().push(new HashSet<>());
+        MIDDGARD$COLLECTOR.get().push(new HashSet<>());
     }
 
     @Inject(
@@ -52,7 +54,7 @@ public class OTTYGTreeFeatureMixin {
             require = 0
     )
     private static void midgard$collectBlocks(Map<BlockPos, BlockState> map, WorldGenLevel level, CallbackInfo ci) {
-        midgard$collectInto(map);
+        middgard$collectInto(map);
     }
 
     @Inject(
@@ -62,7 +64,7 @@ public class OTTYGTreeFeatureMixin {
             require = 0
     )
     private static void midgard$collectLeaves(Map<BlockPos, BlockState> map, WorldGenLevel level, CallbackInfo ci) {
-        midgard$collectInto(map);
+        middgard$collectInto(map);
     }
 
     @Inject(
@@ -74,14 +76,14 @@ public class OTTYGTreeFeatureMixin {
             require = 0
     )
     private void midgard$updateFenceShapes(FeaturePlaceContext<?> ctx, CallbackInfoReturnable<Boolean> cir) {
-        Set<BlockPos> positions = MIDGARD$COLLECTOR.get().poll();
+        Set<BlockPos> positions = MIDDGARD$COLLECTOR.get().poll();
         if (positions == null || positions.isEmpty()) return;
         if (!Boolean.TRUE.equals(cir.getReturnValue())) return;
 
         WorldGenLevel level = ctx.level();
         for (BlockPos pos : positions) {
             BlockState state = level.getBlockState(pos);
-            if (!isFenceLike(state)) continue;
+            if (!middgard$isFenceLike(state)) continue;
 
             BlockState current = state;
             boolean changed = false;
@@ -100,18 +102,20 @@ public class OTTYGTreeFeatureMixin {
         }
     }
 
-    private static void midgard$collectInto(Map<BlockPos, BlockState> map) {
-        Deque<Set<BlockPos>> stack = MIDGARD$COLLECTOR.get();
+    @Unique
+    private static void middgard$collectInto(Map<BlockPos, BlockState> map) {
+        Deque<Set<BlockPos>> stack = MIDDGARD$COLLECTOR.get();
         Set<BlockPos> top = stack.peek();
         if (top == null) return;
         for (Map.Entry<BlockPos, BlockState> entry : map.entrySet()) {
-            if (isFenceLike(entry.getValue())) {
+            if (middgard$isFenceLike(entry.getValue())) {
                 top.add(entry.getKey().immutable());
             }
         }
     }
 
-    private static boolean isFenceLike(BlockState state) {
+    @Unique
+    private static boolean middgard$isFenceLike(BlockState state) {
         return state.is(BlockTags.FENCES) || state.is(BlockTags.WALLS) || state.is(BlockTags.FENCE_GATES);
     }
 }

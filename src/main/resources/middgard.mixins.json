@@ -6,8 +6,7 @@
     "refmap": "middgard.refmap.json",
     "mixins": [
         "OTTYGTreeFeatureMixin",
-        "SaplingBlockMixin",
-        "StructureTemplateMixin"
+        "SaplingBlockMixin"
     ],
     "injectors": {
         "defaultRequire": 1

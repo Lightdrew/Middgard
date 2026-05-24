@@ -131,5 +131,12 @@
   "biome.middgard.westlands": "Terre del west",
   "biome.middgard.white_shore": "Costa bianca",
 
+  "block.middgard.aspen_sign": "Cartello di pioppo",
+  "block.middgard.aspen_hanging_sign": "Insegna di pioppo",
+  "block.middgard.maple_sign": "Cartello di acero",
+  "block.middgard.maple_hanging_sign": "Insegna di acero",
+  "block.middgard.pine_sign": "Cartello di pino",
+  "block.middgard.pine_hanging_sign": "Insegna di pino",
+
   "creativetab.middgard_tab": "Middgard"
 }
