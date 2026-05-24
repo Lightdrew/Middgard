@@ -14,11 +14,11 @@ public class ModCreativeTab {
         DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Middgard.MOD_ID);
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MIDDGARD_TAB =
-        CREATIVE_MODE_TABS.register("middgard_tab", () -> CreativeModeTab.builder().icon(ModBlocks.PINE_SAPLING::toStack)
-        .title(Component.translatable("creativetab.middgard_tab"))
-        .displayItems((itemDisplayParameters, output) ->
-                ModItems.ITEMS.getEntries().forEach((entry) -> output.accept(entry.get()))
-        ).build());
+        CREATIVE_MODE_TABS.register("middgard_tab",
+            CreativeModeTab.builder().icon(ModBlocks.PINE_SAPLING::toStack)
+            .title(Component.translatable("creativetab.middgard_tab"))
+            .displayItems(ModItems.ITEMS.getEntries())::build
+        );
 
     public static void register(IEventBus eventBus)
     {
