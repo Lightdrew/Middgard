@@ -4,8 +4,10 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DataMapProvider;
 import net.neoforged.neoforge.registries.datamaps.builtin.Compostable;
+import net.neoforged.neoforge.registries.datamaps.builtin.FurnaceFuel;
 import net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps;
 import net.sbeev.middgard.block.ModBlocks;
+import net.sbeev.middgard.item.ModItems;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.concurrent.CompletableFuture;
@@ -17,6 +19,9 @@ public class ModDataMapProvider extends DataMapProvider {
 
     @Override @ParametersAreNonnullByDefault
     protected void gather(HolderLookup.Provider lookupProvider) {
+        this.builder(NeoForgeDataMaps.FURNACE_FUELS)
+                .add(ModItems.TINY_CHARCOAL.getId(), new FurnaceFuel(800), false);
+
         this.builder(NeoForgeDataMaps.COMPOSTABLES)
                 .add(ModBlocks.PINE_SAPLING.getId()        , new Compostable(0.3F), false)
                 .add(ModBlocks.WHITE_PINE_SAPLING.getId()  , new Compostable(0.3F), false)

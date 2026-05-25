@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "tag": "middgard:branches"
+        }
+    ],
+    "result": {
+        "id": "minecraft:stick",
+        "count": 2
+    }
+}
