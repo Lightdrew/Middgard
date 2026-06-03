@@ -1,0 +1,26 @@
+{
+    "values": [
+        "middgard:oak_trunk",
+		"middgard:stripped_oak_trunk",
+        "middgard:birch_trunk",
+		"middgard:stripped_birch_trunk",
+        "middgard:spruce_trunk",
+		"middgard:stripped_spruce_trunk",
+        "middgard:jungle_trunk",
+		"middgard:stripped_jungle_trunk",
+        "middgard:cherry_trunk",
+		"middgard:stripped_cherry_trunk",
+        "middgard:mangrove_trunk",
+		"middgard:stripped_mangrove_trunk",
+        "middgard:dark_oak_trunk",
+		"middgard:stripped_dark_oak_trunk",
+        "middgard:acacia_trunk",
+		"middgard:stripped_acacia_trunk",
+        "middgard:aspen_trunk",
+		"middgard:stripped_aspen_trunk",
+        "middgard:maple_trunk",
+		"middgard:stripped_maple_trunk",
+        "middgard:pine_trunk",
+		"middgard:stripped_pine_trunk"
+    ]
+}

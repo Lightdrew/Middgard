@@ -6,18 +6,20 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
+import javax.annotation.ParametersAreNonnullByDefault;
+
 public class ModLeavesBlock extends LeavesBlock {
     public ModLeavesBlock(Properties pProperties) { super(pProperties); }
 
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) { return true; }
 
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 60;
     }
 
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 30;
     }

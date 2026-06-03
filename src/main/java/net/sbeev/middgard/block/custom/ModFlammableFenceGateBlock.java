@@ -7,21 +7,23 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
+import javax.annotation.ParametersAreNonnullByDefault;
+
 public class ModFlammableFenceGateBlock extends FenceGateBlock {
     public ModFlammableFenceGateBlock(Properties pProperties, SoundEvent openSound, SoundEvent closeSound) {
         super(pProperties,openSound,closeSound);
     }
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return true;
     }
 
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 20;
     }
 
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 5;
     }

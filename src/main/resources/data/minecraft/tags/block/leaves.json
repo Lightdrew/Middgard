@@ -1,4 +1,5 @@
-     {
+{
+  "replace": false,
   "values": [
     "middgard:pine_leaves",
     "middgard:aspen_leaves",

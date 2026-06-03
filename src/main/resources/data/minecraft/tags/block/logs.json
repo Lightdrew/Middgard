@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "#middgard:branches",
+        "#middgard:trunks",
+        "#middgard:aspen_logs",
+        "#middgard:maple_logs",
+        "#middgard:pine_logs"
+    ]
+}

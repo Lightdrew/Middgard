@@ -11,27 +11,29 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.Nullable;
 
+import javax.annotation.ParametersAreNonnullByDefault;
+
 public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
     public ModFlammableRotatedPillarBlock(Properties pProperties) {
         super(pProperties);
     }
 
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return true;
     }
 
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 20;
     }
 
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return 5;
     }
 
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ItemAbility itemAbility, boolean simulate) {
         if(context.getItemInHand().getItem() instanceof AxeItem) {
             if(state.is(ModBlocks.PINE_LOG.get())) {
@@ -58,7 +60,6 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
                 return ModBlocks.STRIPPED_MAPLE_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
-
 
         return super.getToolModifiedState(state, context, itemAbility, simulate);
     }

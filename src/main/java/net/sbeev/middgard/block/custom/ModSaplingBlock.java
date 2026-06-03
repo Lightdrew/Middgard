@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import org.slf4j.Logger;
 
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -41,7 +42,7 @@ public class ModSaplingBlock extends SaplingBlock {
         this.features = features;
     }
 
-    @Override
+    @Override @ParametersAreNonnullByDefault
     public void advanceTree(ServerLevel level, BlockPos pos, BlockState state, RandomSource rand) {
         if (state.getValue(STAGE) == 0) {
             super.advanceTree(level, pos, state, rand);
@@ -154,7 +155,7 @@ public class ModSaplingBlock extends SaplingBlock {
                 .append(" logs_y=2=").append(logsAtY2)
                 .append(" base_anomaly=").append(logsBelowOrAt0 > 0 || (logsAtY1 + logsAtY2) > 2);
 
-        LOGGER.info("{}{}", header.toString(), changes.toString());
+        LOGGER.info("{}{}", header, changes);
     }
 
     private static String describe(BlockState s) {
