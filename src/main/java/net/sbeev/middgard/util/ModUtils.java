@@ -31,11 +31,9 @@ public class ModUtils {
                     pos
             );
 
-            if (updatedState != neighbour) {
-                level.setBlock(mutablePos, updatedState, Block.UPDATE_ALL);
-                level.scheduleTick(mutablePos, leaves, 1);
-            }
-        }
+            if (updatedState == neighbour) continue;
 
+            level.setBlock(mutablePos, updatedState, Block.UPDATE_ALL);
+        }
     }
 }
