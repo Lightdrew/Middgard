@@ -7,8 +7,10 @@ import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class ModUtils {
-    public static void updateBlocksDiagonally(Block block, BlockState state, BlockState newState, BlockPos pos, Level level)
+    public static void updateBlocksDiagonally(BlockState state, BlockState newState, BlockPos pos, Level level)
     {
+        if(state.equals(newState)) return;
+
         BlockPos.MutableBlockPos mutablePos = new BlockPos.MutableBlockPos();
 
         for (int x = -1; x < 2; x++) for (int y = -1; y < 2; y++) for (int z = -1; z < 2; z++)

@@ -36,7 +36,6 @@ config="${mod_id}.mixins.json"
 file="META-INF/accesstransformer.cfg"
 
 # The coremods config file path is not configurable and is always loaded from META-INF/coremods.json
-
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies."${mod_id}"]] #optional
 # the modid of the dependency
@@ -83,3 +82,8 @@ type = "required"
 versionRange = "${lithostitched_version_range}"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "diagonal_leaves"
+type = "incompatible"
+reason = "Functionality of Diagonal Leaves is already bundled in with Middgard."
