@@ -38,7 +38,7 @@ public class LeavesBlockMixin extends BlockBehaviourMixin
 
             blockpos$mutableblockpos.setWithOffset(pos, x, y, z);
 
-            i = Math.min(i, LeavesBlock.getDistanceAt(level.getBlockState(blockpos$mutableblockpos)) + dist);
+            i = Math.min(i, LeavesBlock.getOptionalDistanceAt(level.getBlockState(blockpos$mutableblockpos)).orElse(LeavesBlock.DECAY_DISTANCE) + dist);
             if (i == 1) {
                 break;
             }
@@ -48,11 +48,11 @@ public class LeavesBlockMixin extends BlockBehaviourMixin
 
     @Override
     protected void mixin$onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving, CallbackInfo ci) {
-        ModUtils.updateBlocksDiagonally(newState, state, pos, level);
+        ModUtils.updateBlocksDiagonally(newState, pos, level);
     }
 
     @Override
     protected void mixin$onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving, CallbackInfo ci) {
-        ModUtils.updateBlocksDiagonally(oldState, state, pos, level);
+        ModUtils.updateBlocksDiagonally(state, pos, level);
     }
 }

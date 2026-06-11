@@ -33,7 +33,7 @@ public class ModFlammableFenceBlock extends FenceBlock {
     @Override @ParametersAreNonnullByDefault
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
         super.onRemove(state, level, pos, newState, isMoving);
-        if(state.is(BlockTags.LOGS)) ModUtils.updateBlocksDiagonally(state, newState, pos, level);
+        if(state.is(BlockTags.LOGS)) ModUtils.updateBlocksDiagonally(state, pos, level);
     }
 }
 

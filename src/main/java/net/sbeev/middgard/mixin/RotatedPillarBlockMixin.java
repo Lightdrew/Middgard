@@ -14,11 +14,11 @@ public class RotatedPillarBlockMixin extends BlockBehaviourMixin
 {
     @Override
     protected void mixin$onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving, CallbackInfo ci) {
-        if(state.is(BlockTags.LOGS)) ModUtils.updateBlocksDiagonally(state, newState, pos, level);
+        if(state.is(BlockTags.LOGS)) ModUtils.updateBlocksDiagonally(newState, pos, level);
     }
 
     @Override
     protected void mixin$onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving, CallbackInfo ci) {
-        if(state.is(BlockTags.LOGS)) ModUtils.updateBlocksDiagonally(oldState, state, pos, level);
+        if(state.is(BlockTags.LOGS)) ModUtils.updateBlocksDiagonally(oldState, pos, level);
     }
 }

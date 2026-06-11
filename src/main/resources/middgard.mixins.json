@@ -9,7 +9,8 @@
         "LeavesBlockMixin",
         "OTTYGTreeFeatureMixin",
         "RotatedPillarBlockMixin",
-        "SaplingBlockMixin"
+        "SaplingBlockMixin",
+        "at.ILeavesBlockAT"
     ],
     "injectors": {
         "defaultRequire": 1
