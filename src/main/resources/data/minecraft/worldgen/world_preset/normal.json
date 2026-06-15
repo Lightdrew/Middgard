@@ -1,5 +1,26 @@
 {
     "dimensions": {
+        "minecraft:the_nether": {
+            "type": "minecraft:the_nether",
+            "generator": {
+                "type": "minecraft:noise",
+                "biome_source": {
+                    "type": "minecraft:multi_noise",
+                    "preset": "minecraft:nether"
+                },
+                "settings": "minecraft:nether"
+            }
+        },
+        "minecraft:the_end": {
+            "type": "minecraft:the_end",
+            "generator": {
+                "type": "minecraft:noise",
+                "biome_source": {
+                    "type": "minecraft:the_end"
+                },
+                "settings": "minecraft:end"
+            }
+        },
         "minecraft:overworld": {
             "type": "minecraft:overworld",
             "generator": {
@@ -30,67 +51,7 @@
                                     -0.06,
                                     0.06
                                 ],
-                                "offset": 0.0,
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ]
-                            }
-                        },
-                        {
-                            "biome": "minecraft:river",
-                            "parameters": {
-                                "temperature": [
-                                    -0.35,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.18,
-                                    1
-                                ],
-                                "erosion": [
-                                    -1,
-                                    0.55
-                                ],
-                                "weirdness": [
-                                    -0.06,
-                                    0.06
-                                ],
-                                "offset": 0.0,
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ]
-                            }
-                        },
-                        {
-                            "biome": "minecraft:river",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    1
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.18,
-                                    1
-                                ],
-                                "erosion": [
-                                    -1,
-                                    1
-                                ],
-                                "weirdness": [
-                                    -0.06,
-                                    0.06
-                                ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "depth": [
                                     -0.005,
                                     0
@@ -120,7 +81,7 @@
                                     -0.06,
                                     0.06
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "depth": [
                                     -0.005,
                                     0
@@ -132,7 +93,7 @@
                             "parameters": {
                                 "temperature": [
                                     -1,
-                                    -0.70
+                                    -0.7
                                 ],
                                 "humidity": [
                                     -1,
@@ -142,13 +103,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -156,39 +115,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:snowy_plains",
-                            "parameters": {
-                                "temperature": [
-                                    -1,
-                                    -0.70
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -196,23 +123,21 @@
                             "parameters": {
                                 "temperature": [
                                     -1,
-                                    -0.70
+                                    -0.7
                                 ],
                                 "humidity": [
                                     -1,
                                     1
-                                ]   ,
+                                ],
                                 "continentalness": [
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     0
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -220,7 +145,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -228,7 +153,7 @@
                             "parameters": {
                                 "temperature": [
                                     -1,
-                                    -0.70
+                                    -0.7
                                 ],
                                 "humidity": [
                                     -1,
@@ -238,13 +163,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -1,
                                     -0.51
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -252,78 +175,14 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:snowy_plains",
-                            "parameters": {
-                                "temperature": [
-                                    -0.70,
-                                    -0.55
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    -0.55,
-                                    -0.06
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:snowy_plains",
-                            "parameters": {
-                                "temperature": [
-                                    -0.70,
-                                    -0.55
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    0.55
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
                             "biome": "minecraft:ice_spikes",
                             "parameters": {
                                 "temperature": [
-                                    -0.70,
+                                    -0.7,
                                     -0.55
                                 ],
                                 "humidity": [
@@ -334,13 +193,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.55
                                 ],
@@ -348,46 +205,14 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:ice_spikes",
-                            "parameters": {
-                                "temperature": [
-                                    -0.70,
-                                    -0.55
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    0.55,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
                             "biome": "minecraft:snowy_taiga",
                             "parameters": {
                                 "temperature": [
-                                    -0.70,
+                                    -0.7,
                                     -0.55
                                 ],
                                 "humidity": [
@@ -398,13 +223,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -412,95 +235,29 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:snowy_taiga",
-                            "parameters": {
-                                "temperature": [
-                                    -0.70,
-                                    -0.55
-                                ],
-                                "humidity": [
-                                    0,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:snowy_slopes",
-                            "parameters": {
-                                "temperature": [
-                                    -0.70,
-                                    -0.55
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0
-                                ]   ,
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
                             "biome": "minecraft:grove",
                             "parameters": {
                                 "temperature": [
-                                    -0.70,
+                                    -0.7,
                                     -0.55
                                 ],
                                 "humidity": [
                                     0,
                                     1
-                                ]   ,
+                                ],
                                 "continentalness": [
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     0
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -508,39 +265,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:frozen_peaks",
-                            "parameters": {
-                                "temperature": [
-                                    -0.70,
-                                    -0.55
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -1,
-                                    -0.51
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -558,13 +283,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -572,39 +295,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:snowy_windswept_hills",
-                            "parameters": {
-                                "temperature": [
-                                    -0.55,
-                                    -0.35
-                                ],
-                                "humidity": [
-                                    -1,
-                                    -0.25
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -622,13 +313,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -636,103 +325,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:taiga",
-                            "parameters": {
-                                "temperature": [
-                                    -0.55,
-                                    -0.35
-                                ],
-                                "humidity": [
-                                    -0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:snowy_windswept_hills",
-                            "parameters": {
-                                "temperature": [
-                                    -0.55,
-                                    -0.35
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0
-                                ]   ,
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:taiga",
-                            "parameters": {
-                                "temperature": [
-                                    -0.55,
-                                    -0.35
-                                ],
-                                "humidity": [
-                                    0,
-                                    1
-                                ]   ,
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -750,13 +343,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -1,
                                     -0.51
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -764,7 +355,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -782,13 +373,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.29,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -796,39 +385,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:maple_forest",
-                            "parameters": {
-                                "temperature": [
-                                    -0.35,
-                                    -0.15
-                                ],
-                                "humidity": [
-                                    -0.35,
-                                    0
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.29,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -846,13 +403,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.29,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -860,39 +415,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:autumnal_maple_forest",
-                            "parameters": {
-                                "temperature": [
-                                    -0.35,
-                                    -0.15
-                                ],
-                                "humidity": [
-                                    -1,
-                                    -0.35
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.29,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -910,13 +433,11 @@
                                     -0.155,
                                     0.45
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.29,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -924,39 +445,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:boreal_forest",
-                            "parameters": {
-                                "temperature": [
-                                    -0.35,
-                                    -0.15
-                                ],
-                                "humidity": [
-                                    0,
-                                    1
-                                ],
-                                "continentalness": [
-                                    0.25,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.29,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -974,13 +463,11 @@
                                     0.45,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.29,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -988,7 +475,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1006,13 +493,11 @@
                                     -0.155,
                                     0.25
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.29,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     0.06,
                                     1
                                 ],
@@ -1020,71 +505,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:swamp",
-                            "parameters": {
-                                "temperature": [
-                                    -0.35,
-                                    -0.15
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    0.25
-                                ],
-                                "erosion":
-                                [
-                                    0.55,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:boreal_forest",
-                            "parameters": {
-                                "temperature": [
-                                    -0.35,
-                                    -0.15
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    0.25,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0.55,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1102,13 +523,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     0
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -1116,7 +535,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1129,18 +548,16 @@
                                 "humidity": [
                                     -0.15,
                                     0.25
-                                ]   ,
+                                ],
                                 "continentalness": [
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     -0.29
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -1148,7 +565,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1166,13 +583,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     -0.29
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     0.25
                                 ],
@@ -1180,7 +595,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1198,13 +613,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     -0.29
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     0.25,
                                     1
                                 ],
@@ -1212,39 +625,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:jagged_peaks",
-                            "parameters": {
-                                "temperature": [
-                                    -0.35,
-                                    -0.15
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -1,
-                                    -0.51
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1262,13 +643,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.01,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -1276,39 +655,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:plains",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    -1,
-                                    -0.05
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    0.45
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1326,13 +673,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     0.45,
                                     1
                                 ],
@@ -1340,7 +685,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1358,13 +703,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -1372,39 +715,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:forest_edge",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    -0.05,
-                                    0.05
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1422,13 +733,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -0.25,
                                     -0.06
                                 ],
@@ -1436,39 +745,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:forest",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    0.05,
-                                    0.35
-                                ],
-                                "continentalness": [
-                                    0.25,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    0.45
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1486,13 +763,11 @@
                                     0.25,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     0.45,
                                     1
                                 ],
@@ -1500,39 +775,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:old_growth_pine_taiga",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    0.05,
-                                    0.35
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    0.25
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1550,13 +793,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.25
                                 ],
@@ -1564,7 +805,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1582,13 +823,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -1596,135 +835,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:dark_forest",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    0.35,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:swamp",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    0.25
-                                ],
-                                "erosion":
-                                [
-                                    0.55,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:forest",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    0.25,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0.55,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:meadow",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    -0.01
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1742,13 +853,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     -0.01
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     0
                                 ],
@@ -1756,167 +865,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:aspen_forest",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    0,
-                                    0.25
-                                ],
-                                "continentalness": [
-                                    0.25,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    -0.01
-                                ],
-                                "weirdness":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:old_growth_pine_taiga",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    0,
-                                    0.25
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    0.25
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:forest",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -1,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    0
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:forest",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    0.25,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -1,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:old_growth_pine_taiga",
-                            "parameters": {
-                                "temperature": [
-                                    -0.15,
-                                    0.15
-                                ],
-                                "humidity": [
-                                    0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    0.25
-                                ],
-                                "erosion":
-                                [
-                                    -1,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1934,13 +883,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -1,
                                     -0.51
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -1948,7 +895,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -1966,13 +913,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.01,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.09
                                 ],
@@ -1980,39 +925,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:steppe",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.25
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0.45
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.01,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.09,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -2030,13 +943,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.01,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -0.09,
                                     -0.06
                                 ],
@@ -2044,39 +955,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:riverbank",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.25
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0.45
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.01,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    0.09
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -2094,13 +973,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.01,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -2108,39 +985,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:westlands",
-                            "parameters": {
-                                "temperature": [
-                                    0.25,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0.45
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.01,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -2158,13 +1003,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.01,
                                     0.55
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -2172,231 +1015,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:pine_forest",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    0.45,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.01,
-                                    0.55
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:swamp",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    0.25
-                                ],
-                                "erosion":
-                                [
-                                    0.55,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:riverbank",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    0.25,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0.55,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:steppe",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.25
-                                ],
-                                "humidity": [
-                                    -1,
-                                    -0.25
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    0.55
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    0.5
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:steppe",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.25
-                                ],
-                                "humidity": [
-                                    -0.25,
-                                    0.25
-                                ]   ,
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    0.5
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:pine_forest",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.25
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0.25
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    -0.01
-                                ],
-                                "weirdness":
-                                [
-                                    0.5,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:aspen_forest",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.25
-                                ],
-                                "humidity": [
-                                    0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    0
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -2414,13 +1033,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     0
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     0,
                                     1
                                 ],
@@ -2428,231 +1045,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:westlands",
-                            "parameters": {
-                                "temperature": [
-                                    0.25,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    -1,
-                                    -0.25
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    0.55
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    0.5
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:steppe",
-                            "parameters": {
-                                "temperature": [
-                                    0.25,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    -0.25,
-                                    0.25
-                                ]   ,
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    0.5
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:pine_forest",
-                            "parameters": {
-                                "temperature": [
-                                    0.25,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0.25
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    -0.01
-                                ],
-                                "weirdness":
-                                [
-                                    0.5,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:aspen_forest",
-                            "parameters": {
-                                "temperature": [
-                                    0.25,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    0
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:autumnal_aspen_forest",
-                            "parameters": {
-                                "temperature": [
-                                    0.25,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    0
-                                ],
-                                "weirdness":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:jagged_peaks",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    -0.3,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -1,
-                                    -0.51
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:stony_peaks",
-                            "parameters": {
-                                "temperature": [
-                                    0.15,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    -1,
-                                    -0.3
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -1,
-                                    -0.51
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -2660,23 +1053,21 @@
                             "parameters": {
                                 "temperature": [
                                     0.35,
-                                    0.60
+                                    0.6
                                 ],
                                 "humidity": [
                                     0.25,
                                     1
                                 ],
                                 "continentalness": [
-                                    0.00,
-                                    1
-                                ],
-                                "erosion":
-                                [
                                     0,
                                     1
                                 ],
-                                "weirdness":
-                                [
+                                "erosion": [
+                                    0,
+                                    1
+                                ],
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -2684,103 +1075,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:savanna",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    0.60
-                                ],
-                                "humidity": [
-                                    0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    0.00,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:westlands",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    0.60
-                                ],
-                                "humidity": [
-                                    -0.05,
-                                    0.25
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    -0.06
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:westlands",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    0.60
-                                ],
-                                "humidity": [
-                                    -0.05,
-                                    0.25
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -2788,7 +1083,7 @@
                             "parameters": {
                                 "temperature": [
                                     0.35,
-                                    0.60
+                                    0.6
                                 ],
                                 "humidity": [
                                     -0.25,
@@ -2798,13 +1093,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -2812,39 +1105,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:eroded_badlands",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    0.60
-                                ],
-                                "humidity": [
-                                    -0.25,
-                                    -0.05
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -2852,7 +1113,7 @@
                             "parameters": {
                                 "temperature": [
                                     0.35,
-                                    0.60
+                                    0.6
                                 ],
                                 "humidity": [
                                     -1,
@@ -2862,13 +1123,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     0,
                                     1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     -0.06
                                 ],
@@ -2876,39 +1135,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:badlands",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    0.60
-                                ],
-                                "humidity": [
-                                    -1,
-                                    -0.25
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    0,
-                                    1
-                                ],
-                                "weirdness":
-                                [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -2916,23 +1143,21 @@
                             "parameters": {
                                 "temperature": [
                                     0.35,
-                                    0.60
+                                    0.6
                                 ],
                                 "humidity": [
                                     -1,
-                                    -0.10
+                                    -0.1
                                 ],
                                 "continentalness": [
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     0
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -2940,7 +1165,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -2948,23 +1173,21 @@
                             "parameters": {
                                 "temperature": [
                                     0.35,
-                                    0.60
+                                    0.6
                                 ],
                                 "humidity": [
-                                    -0.10,
-                                    0.40
+                                    -0.1,
+                                    0.4
                                 ],
                                 "continentalness": [
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     -0.1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -2972,7 +1195,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -2980,23 +1203,21 @@
                             "parameters": {
                                 "temperature": [
                                     0.35,
-                                    0.60
+                                    0.6
                                 ],
                                 "humidity": [
-                                    0.40,
+                                    0.4,
                                     0.45
                                 ],
                                 "continentalness": [
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     -0.1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -3004,7 +1225,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -3012,7 +1233,7 @@
                             "parameters": {
                                 "temperature": [
                                     0.35,
-                                    0.60
+                                    0.6
                                 ],
                                 "humidity": [
                                     0.45,
@@ -3022,13 +1243,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     -0.1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     0
                                 ],
@@ -3036,39 +1255,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:jungle",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    0.60
-                                ],
-                                "humidity": [
-                                    0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -0.51,
-                                    -0.1
-                                ],
-                                "weirdness":
-                                [
-                                    0,
-                                    0.3
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -3076,7 +1263,7 @@
                             "parameters": {
                                 "temperature": [
                                     0.35,
-                                    0.60
+                                    0.6
                                 ],
                                 "humidity": [
                                     0.25,
@@ -3086,13 +1273,11 @@
                                     -0.155,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     -0.1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     0.3,
                                     1
                                 ],
@@ -3100,78 +1285,14 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:stony_peaks",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    0.60
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0.25
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -1,
-                                    -0.51
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:jagged_peaks",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    0.60
-                                ],
-                                "humidity": [
-                                    0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.155,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -1,
-                                    -0.51
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
                             "biome": "minecraft:desert",
                             "parameters": {
                                 "temperature": [
-                                    0.60,
+                                    0.6,
                                     1
                                 ],
                                 "humidity": [
@@ -3182,13 +1303,11 @@
                                     -0.18,
                                     1
                                 ],
-                                "erosion":
-                                [
+                                "erosion": [
                                     -0.51,
                                     1
                                 ],
-                                "weirdness":
-                                [
+                                "weirdness": [
                                     -1,
                                     1
                                 ],
@@ -3196,39 +1315,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:stony_peaks",
-                            "parameters": {
-                                "temperature": [
-                                    0.60,
-                                    1
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.18,
-                                    1
-                                ],
-                                "erosion":
-                                [
-                                    -1,
-                                    -0.51
-                                ],
-                                "weirdness":
-                                [
-                                    -1,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -3258,37 +1345,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:beach",
-                            "parameters": {
-                                "temperature": [
-                                    -0.55,
-                                    0.35
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.18,
-                                    -0.155
-                                ],
-                                "erosion": [
-                                    -0.2,
-                                    1
-                                ],
-                                "weirdness": [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -3296,7 +1353,7 @@
                             "parameters": {
                                 "temperature": [
                                     0.35,
-                                    0.70
+                                    0.7
                                 ],
                                 "humidity": [
                                     -1,
@@ -3318,37 +1375,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "middgard:white_shore",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    0.70
-                                ],
-                                "humidity": [
-                                    -1,
-                                    0.25
-                                ],
-                                "continentalness": [
-                                    -0.18,
-                                    -0.155
-                                ],
-                                "erosion": [
-                                    -0.2,
-                                    1
-                                ],
-                                "weirdness": [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -3356,7 +1383,7 @@
                             "parameters": {
                                 "temperature": [
                                     0.35,
-                                    0.70
+                                    0.7
                                 ],
                                 "humidity": [
                                     0.25,
@@ -3364,7 +1391,7 @@
                                 ],
                                 "continentalness": [
                                     -0.18,
-                                    0.00
+                                    0
                                 ],
                                 "erosion": [
                                     0,
@@ -3378,37 +1405,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:mangrove_swamp",
-                            "parameters": {
-                                "temperature": [
-                                    0.35,
-                                    0.70
-                                ],
-                                "humidity": [
-                                    0.25,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.18,
-                                    0.00
-                                ],
-                                "erosion": [
-                                    0,
-                                    1
-                                ],
-                                "weirdness": [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -3438,37 +1435,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:snowy_beach",
-                            "parameters": {
-                                "temperature": [
-                                    -1,
-                                    -0.55
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.18,
-                                    -0.155
-                                ],
-                                "erosion": [
-                                    -0.2,
-                                    1
-                                ],
-                                "weirdness": [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -3498,37 +1465,7 @@
                                     -0.005,
                                     0
                                 ],
-                                "offset": 0.0
-                            }
-                        },
-                        {
-                            "biome": "minecraft:stony_shore",
-                            "parameters": {
-                                "temperature": [
-                                    -1,
-                                    1
-                                ],
-                                "humidity": [
-                                    -1,
-                                    1
-                                ],
-                                "continentalness": [
-                                    -0.18,
-                                    -0.155
-                                ],
-                                "erosion": [
-                                    -2,
-                                    -0.2
-                                ],
-                                "weirdness": [
-                                    0.06,
-                                    1
-                                ],
-                                "depth": [
-                                    -0.005,
-                                    0
-                                ],
-                                "offset": 0.0
+                                "offset": 0
                             }
                         },
                         {
@@ -3550,7 +1487,7 @@
                                     -1,
                                     1
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "temperature": [
                                     0.35,
                                     2
@@ -3580,7 +1517,7 @@
                                     -1,
                                     1
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "temperature": [
                                     0.15,
                                     0.35
@@ -3610,7 +1547,7 @@
                                     -1,
                                     1
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "temperature": [
                                     0.15,
                                     0.35
@@ -3640,7 +1577,7 @@
                                     -1,
                                     1
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "temperature": [
                                     -0.15,
                                     0.15
@@ -3670,7 +1607,7 @@
                                     -1,
                                     1
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "temperature": [
                                     -0.15,
                                     0.15
@@ -3700,7 +1637,7 @@
                                     -1,
                                     1
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "temperature": [
                                     -0.55,
                                     -0.15
@@ -3730,7 +1667,7 @@
                                     -1,
                                     1
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "temperature": [
                                     -0.55,
                                     -0.15
@@ -3760,7 +1697,7 @@
                                     -1,
                                     1
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "temperature": [
                                     -2,
                                     -0.55
@@ -3790,7 +1727,7 @@
                                     -1,
                                     1
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "temperature": [
                                     -2,
                                     -0.55
@@ -3820,7 +1757,7 @@
                                     -1,
                                     1
                                 ],
-                                "offset": 0.0,
+                                "offset": 0,
                                 "temperature": [
                                     -1,
                                     1

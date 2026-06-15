@@ -7,11 +7,17 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.sbeev.middgard.util.ModUtils;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 
+import static net.drew.diagonal_leaves.util.ModUtils.updateBlocksDiagonally;
+
 public class ModFlammableWallBlock extends WallBlock {
+    @Override @ParametersAreNonnullByDefault
+    public boolean connectsTo(BlockState state, boolean isSideSolid, Direction direction) {
+        return super.connectsTo(state, isSideSolid, direction) || state.is(ModTags.CANOPY_BLOCKS);
+    }
+
     public ModFlammableWallBlock(Properties pProperties) {
         super(pProperties);
     }
@@ -33,6 +39,6 @@ public class ModFlammableWallBlock extends WallBlock {
     @Override @ParametersAreNonnullByDefault
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
         super.onRemove(state, level, pos, newState, isMoving);
-        if(state.is(BlockTags.LOGS)) ModUtils.updateBlocksDiagonally(state, pos, level);
+        if(state.is(BlockTags.LOGS)) updateBlocksDiagonally(state, pos, level);
     }
 }

@@ -1,121 +1,99 @@
 package net.sbeev.middgard.mixin;
 
+import dev.corgitaco.ohthetreesyoullgrow.world.level.levelgen.feature.TreeFromStructureNBTFeature;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.WorldGenLevel;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.WallSide;
+import net.sbeev.middgard.block.custom.ModTags;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
-/**
- * @author <a href="https://github.com/vaakx-dev">vaakx-dev</a>
- */
+import static net.sbeev.middgard.StartupConfig.TREE_FIX_SCAN_LEVEL_ON_MISS;
+
 @Pseudo
-@Mixin(targets = {
-        "dev.corgitaco.ohthetreesyoullgrow.world.level.levelgen.feature.TreeFromStructureNBTFeature",
-        "dev.corgitaco.ohthetreesyoullgrow.world.level.levelgen.feature.TreeFromStructureNBTFeatureV2"
-}, remap = false)
-public class OTTYGTreeFeatureMixin {
+@Mixin(TreeFromStructureNBTFeature.class)
+public class OTTYGTreeFeatureMixin
+{
+    @Unique
+    private static final boolean SHOULD_SCAN = TREE_FIX_SCAN_LEVEL_ON_MISS.getAsBoolean();
 
     @Unique
-    private static final ThreadLocal<Deque<Set<BlockPos>>> MIDDGARD$COLLECTOR =
-            ThreadLocal.withInitial(ArrayDeque::new);
+    private static final Map<Direction, EnumProperty<WallSide>> TRUNK_PROPERTY_BY_DIRECTION = Map.of(
+            Direction.NORTH, BlockStateProperties.NORTH_WALL,
+            Direction.SOUTH, BlockStateProperties.SOUTH_WALL,
+            Direction.EAST, BlockStateProperties.EAST_WALL,
+            Direction.WEST, BlockStateProperties.WEST_WALL
+    );
+
+    @Unique
+    private static final Map<Direction, BooleanProperty> BRANCH_PROPERTY_BY_DIRECTION = Map.of(
+            Direction.NORTH, BlockStateProperties.NORTH,
+            Direction.SOUTH, BlockStateProperties.SOUTH,
+            Direction.EAST, BlockStateProperties.EAST,
+            Direction.WEST, BlockStateProperties.WEST
+    );
 
     @Inject(
-            method = {
-                    "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z",
-            },
+            method = "placeKnownBlockPositions",
             at = @At("HEAD"),
-            remap = false,
-            require = 0
+            remap = false
     )
-    private void midgard$pushCollector(FeaturePlaceContext<?> ctx, CallbackInfoReturnable<Boolean> cir) {
-        MIDDGARD$COLLECTOR.get().push(new HashSet<>());
-    }
+    private static void placeKnownBlockPositions(Map<BlockPos, BlockState> positions, WorldGenLevel level, CallbackInfo ci)
+    {
+        positions.entrySet().forEach(entry ->
+        {
+            BlockState state = entry.getValue();
 
-    @Inject(
-            method = "placeKnownBlockPositions(Ljava/util/Map;Lnet/minecraft/world/level/WorldGenLevel;)V",
-            at = @At("RETURN"),
-            remap = false,
-            require = 0
-    )
-    private static void midgard$collectBlocks(Map<BlockPos, BlockState> map, WorldGenLevel level, CallbackInfo ci) {
-        middgard$collectInto(map);
-    }
+            boolean isTrunk = state.is(ModTags.TRUNKS);
+            boolean isBranch = state.is(ModTags.BRANCHES);
 
-    @Inject(
-            method = "placeKnownLeavePositions(Ljava/util/Map;Lnet/minecraft/world/level/WorldGenLevel;)V",
-            at = @At("RETURN"),
-            remap = false,
-            require = 0
-    )
-    private static void midgard$collectLeaves(Map<BlockPos, BlockState> map, WorldGenLevel level, CallbackInfo ci) {
-        middgard$collectInto(map);
-    }
+            if (!(isBranch || isTrunk)) return;
 
-    @Inject(
-            method = {
-                    "place(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Z",
-            },
-            at = @At("RETURN"),
-            remap = false,
-            require = 0
-    )
-    private void midgard$updateFenceShapes(FeaturePlaceContext<?> ctx, CallbackInfoReturnable<Boolean> cir) {
-        Set<BlockPos> positions = MIDDGARD$COLLECTOR.get().poll();
-        if (positions == null || positions.isEmpty()) return;
-        if (!Boolean.TRUE.equals(cir.getReturnValue())) return;
+            BlockPos pos = entry.getKey().immutable();
 
-        WorldGenLevel level = ctx.level();
-        for (BlockPos pos : positions) {
-            BlockState state = level.getBlockState(pos);
-            if (!middgard$isFenceLike(state)) continue;
+            boolean updated = false;
+            BlockState newState = state;
 
-            BlockState current = state;
-            boolean changed = false;
-            for (Direction dir : Direction.Plane.HORIZONTAL) {
-                BlockPos neigh = pos.relative(dir);
-                BlockState neighState = level.getBlockState(neigh);
-                BlockState updated = current.updateShape(dir, neighState, level, pos, neigh);
-                if (current != updated) {
-                    current = updated;
-                    changed = true;
+            for(Direction dir : Direction.Plane.HORIZONTAL)
+            {
+                BlockPos neighbourPos = pos.relative(dir);
+                BlockState neighbourState = positions.get(neighbourPos);
+
+                if (SHOULD_SCAN && neighbourState == null) neighbourState = level.getBlockState(neighbourPos);
+
+                boolean isNeighbourCanopy = neighbourState != null && neighbourState.is(ModTags.CANOPY_BLOCKS);
+
+                if (isTrunk)
+                {
+                    newState = state.setValue(
+                        TRUNK_PROPERTY_BY_DIRECTION.get(dir),
+                        isNeighbourCanopy ? WallSide.LOW : WallSide.NONE
+                    );
                 }
-            }
-            if (changed) {
-                level.setBlock(pos, current, Block.UPDATE_CLIENTS);
-            }
-        }
-    }
 
-    @Unique
-    private static void middgard$collectInto(Map<BlockPos, BlockState> map) {
-        Deque<Set<BlockPos>> stack = MIDDGARD$COLLECTOR.get();
-        Set<BlockPos> top = stack.peek();
-        if (top == null) return;
-        for (Map.Entry<BlockPos, BlockState> entry : map.entrySet()) {
-            if (middgard$isFenceLike(entry.getValue())) {
-                top.add(entry.getKey().immutable());
-            }
-        }
-    }
+                if (isBranch) newState = state.setValue(
+                    BRANCH_PROPERTY_BY_DIRECTION.get(dir),
+                    isNeighbourCanopy
+                );
 
-    @Unique
-    private static boolean middgard$isFenceLike(BlockState state) {
-        return state.is(BlockTags.FENCES) || state.is(BlockTags.WALLS) || state.is(BlockTags.FENCE_GATES);
+                if (newState.equals(state)) continue;
+
+                updated = true;
+                state = newState;
+            }
+
+            if (updated) entry.setValue(state);
+        });
     }
 }

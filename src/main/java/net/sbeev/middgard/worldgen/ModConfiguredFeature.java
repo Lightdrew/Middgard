@@ -95,6 +95,11 @@ public final class ModConfiguredFeature {
             "oak/tall_oak_tree_1", "oak/tall_oak_tree_2", "oak/tall_oak_tree_3",
             "oak/tall_oak_tree_4", "oak/tall_oak_tree_5");
 
+    public static final List<ResourceKey<ConfiguredFeature<?, ?>>> VANILLA_DARK_OAK = listOf(
+            "dark_oak/dark_oak_tree_1", "dark_oak/dark_oak_tree_2",
+            "dark_oak/dark_oak_tree_3", "dark_oak/dark_oak_tree_4",
+            "dark_oak/huge_dark_oak_tree_1");
+
     public static final List<ResourceKey<ConfiguredFeature<?, ?>>> VANILLA_BIRCH = listOf(
             "birch/small_birch_tree_1", "birch/small_birch_tree_2", "birch/small_birch_tree_3",
             "birch/small_birch_tree_4", "birch/small_birch_tree_5", "birch/small_birch_tree_6", "birch/small_birch_tree_7",

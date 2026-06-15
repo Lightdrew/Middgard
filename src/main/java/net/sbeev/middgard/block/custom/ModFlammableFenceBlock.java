@@ -7,14 +7,21 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.sbeev.middgard.util.ModUtils;
 
 import javax.annotation.ParametersAreNonnullByDefault;
+
+import static net.drew.diagonal_leaves.util.ModUtils.updateBlocksDiagonally;
 
 public class ModFlammableFenceBlock extends FenceBlock {
     public ModFlammableFenceBlock(Properties pProperties) {
         super(pProperties);
     }
+
+    @Override @ParametersAreNonnullByDefault
+    public boolean connectsTo(BlockState state, boolean isSideSolid, Direction direction) {
+        return super.connectsTo(state, isSideSolid, direction) || state.is(ModTags.CANOPY_BLOCKS);
+    }
+
     @Override @ParametersAreNonnullByDefault
     public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
         return true;
@@ -33,7 +40,7 @@ public class ModFlammableFenceBlock extends FenceBlock {
     @Override @ParametersAreNonnullByDefault
     public void onRemove(BlockState state, Level level, BlockPos pos, BlockState newState, boolean isMoving) {
         super.onRemove(state, level, pos, newState, isMoving);
-        if(state.is(BlockTags.LOGS)) ModUtils.updateBlocksDiagonally(state, pos, level);
+        if(state.is(BlockTags.LOGS)) updateBlocksDiagonally(state, pos, level);
     }
 }
 

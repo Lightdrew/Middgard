@@ -5,12 +5,8 @@
     "compatibilityLevel": "JAVA_21",
     "refmap": "middgard.refmap.json",
     "mixins": [
-        "BlockBehaviourMixin",
-        "LeavesBlockMixin",
         "OTTYGTreeFeatureMixin",
-        "RotatedPillarBlockMixin",
-        "SaplingBlockMixin",
-        "at.ILeavesBlockAT"
+        "SaplingBlockMixin"
     ],
     "injectors": {
         "defaultRequire": 1
