@@ -1,6 +1,9 @@
 # Middgard 1.21.1 port
 Unofficial port of Midgard/Middgard from 1.20.1 Forge to 1.21.1 Neoforge I made for personal use.
 
+# If you have an older world and the nether/end are not working:
+Please use [this datapack](https://github.com/Lightdrew/fix-nether-end-dims) to add the dimensions back, a previous preset misconfiguration caused the save to miss the nether and end dimensions.
+
 ## Credits:
 
 - [SbeevYT](https://github.com/SbeevYT/), [awakaxis](https://github.com/awakaxis/) and Bimbatus for developing the mod, 
