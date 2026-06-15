@@ -7,7 +7,7 @@ Please use [this datapack](https://github.com/Lightdrew/fix-nether-end-dims) to 
 ## Credits:
 
 - [SbeevYT](https://github.com/SbeevYT/), [awakaxis](https://github.com/awakaxis/) and Bimbatus for developing the mod, 
-- [vo2075](https://github.com/vo2075) for the canopy tree rotations (no longer present as they are handled via mixin but thank you regardless),
+- [vo2075](https://github.com/vo2075) for the canopy tree rotations,
 - [HarlockDevv](https://github.com/HarlockDevv) and [vaakx-dev](https://github.com/vaakx-dev) for the mixin implementations.
 
 All I did was port the code of the original mod to 1.21.1 Neoforge (then promptly finding someone else did that after I went through the whole process), adjust other people's code for my own codebase, change the mod id to avoid collisions and fix leaf decay. Send some love to the people listed above :)\
